@@ -66,8 +66,7 @@ var carousel = function(){
         responsiveClass: true,
         responsive: {
             0: {
-                items: 1,
-                center: true
+                items: 1
             },
             600: {
                 items: 2

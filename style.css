@@ -408,7 +408,16 @@ img {
   height: 100%;
   object-fit: contain;
 }
-
+@media screen and (max-width:599px) {
+  .logo-slider .item {
+    margin-left: 150px;
+  }
+}
+@media screen and (max-width:480px) {
+  .logo-slider .item {
+    margin: 100px;
+  }
+}
 /** Footer **/
 footer {
   position: relative;
