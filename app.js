@@ -10,7 +10,29 @@ menu.addEventListener('click',()=>{
 
 var carousel = function(){
     $('#services-slider').owlCarousel({
-        center: true,
+        center:true,
+			loop:true,
+			autoplay:true,
+			autoplayTimeout:4000,
+			autoplayHoverPause:false,
+			items:1,
+			margin:30,
+			stagePadding:0,
+			nav:false,
+			dots: false,
+			responsive:{
+				0:{
+					items: 1
+				},
+				600:{
+                    items: 2,
+                    margin: 80
+				},
+				1000:{
+					items: 3
+				}
+			}
+        /*center: true,
         items: 3,
         loop: true,
         margin: 10,
@@ -29,7 +51,7 @@ var carousel = function(){
             1000: {
                 items: 3
             }
-        }
+        }*/
     })
     // logo slider
     $('#logo-slider').owlCarousel({
