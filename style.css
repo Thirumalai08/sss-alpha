@@ -352,8 +352,20 @@ img {
   .w50 { margin-bottom: 10px; }
 }
 
-.logo {
+/** Logo Slider **/
+.logo-slider {
+  padding-top: 100px;
+}
+.logo-slider .item {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.logo-slider .item img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  min-height: 30vh;
-  background-color: lightslategrey;
+  height: 100%;
+  object-fit: contain;
 }

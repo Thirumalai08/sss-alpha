@@ -10,6 +10,7 @@ menu.addEventListener('click',()=>{
 
 var carousel = function(){
     $('#services-slider').owlCarousel({
+        center: true,
         items: 3,
         loop: true,
         margin: 10,
@@ -17,6 +18,7 @@ var carousel = function(){
         autoplay: true,
         autoplayTimeout: 2000,
         autoplayHoverPause: true,
+        responsiveClass: true,
         responsive: {
             0: {
                 items:1
@@ -26,6 +28,33 @@ var carousel = function(){
             },
             1000: {
                 items: 3
+            }
+        }
+    })
+    // logo slider
+    $('#logo-slider').owlCarousel({
+        center: true,
+        item: 4,
+        loop: true,
+        margin: 10,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                center: true
+            },
+            600: {
+                items: 2
+            },
+            768:{
+                items: 3
+            },
+            1000: {
+                items: 4
             }
         }
     })
