@@ -376,3 +376,119 @@ img {
   height: 100%;
   object-fit: contain;
 }
+
+/** Footer **/
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  /**/padding: 50px 100px;
+  background: #242C44;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .sec {
+  margin-right: 30px;
+}
+footer .sec.aboutus {
+  width: 40%;
+}
+footer h2 {
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+footer h2:before{
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #fff;
+}
+footer p {
+  color: #999;
+}
+footer .sci {
+  margin-top: 10px;
+  display: flex;
+}
+footer .sci li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  color: #242C44;
+  border: 1px solid #242C44;
+}
+footer .quickLinks {
+  position: relative;
+  width: 25%;
+}
+footer .quickLinks ul li a {
+  color: #999;
+  display: inline-block;
+}
+footer .quickLinks ul li a:hover {
+  color: #fff;
+}
+footer .contact {
+  width: calc(35% - 60px);
+  margin-right: 0 !important;
+}
+footer .contact .info {
+  position: relative;
+}
+footer .contact .info li {
+  display: flex;
+  margin-bottom: 16px;
+}
+footer .contact .info li span:nth-child(1) {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+footer .contact .info li span {
+  color: #999;
+}
+footer .contact .info li a {
+  color: #999;
+}
+footer .contact .info li a:hover {
+  color: #fff;
+}
+.copyrightText {
+  width: 100%;
+  background: #fff;
+  padding: 8px 100px;
+  color: #242C44;
+  text-align: center;
+}
+.copyrightText .name {
+  font-weight: 800;
+}
+@media screen and (max-width:991px){
+  footer {
+    padding: 40px;
+  }
+  footer .flex {
+    flex-direction: column;
+  }
+  footer .sec {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  footer .sec.aboutus,footer .quickLinks,footer .contact {
+    width: 100%;
+  }
+  .copyrightText {
+    padding: 8px 48px;
+  }
+}
