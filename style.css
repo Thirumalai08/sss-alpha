@@ -538,3 +538,80 @@ footer .contact .info li a:hover {
     padding: 8px 48px;
   }
 }
+/************************** Home Page Ends ************************************/
+
+/************************* Services Page Starts *******************************/
+.breadcrumbs {
+  /** if image is used use position relative **/
+  position: relative;
+  background-color: #242C44;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.breadcrumbs img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  object-fit: cover;
+}
+.grid-3 {
+  grid-template-columns: repeat(3,1fr);
+}
+.services-list {
+  width: 100%;
+  min-height: 80vh;
+  height: auto;
+  background-color: #fff;
+  padding: 100px;
+}
+.services-list .services-list-img {
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.services-list .services-list-content {
+  padding: 20px;
+}
+.services-list .services-list-content h3 {
+  color: #242C44;
+}
+.services-list .services-list-content p {
+  font-size: 14px;
+}
+@media screen and (max-width:991px) {
+  .services-list .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width:768px) {
+  .services-list .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.services-about {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+}
+.services-about .services-about-imgBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.services-about .services-about-imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}/**/
