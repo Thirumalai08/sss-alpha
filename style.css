@@ -586,19 +586,19 @@ footer .contact .info li a:hover {
   font-size: 14px;
 }
 @media screen and (max-width:991px) {
-  .services-list .grid {
+  .grid,.services-list .grid {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
 }
 @media screen and (max-width:768px) {
-  .services-list .grid {
+  .grid,.services-list .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
 }
 @media screen and (max-width:505px) {
-  .services-list .grid {
+  .grid,.services-list .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
