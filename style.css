@@ -603,7 +603,7 @@ footer .contact .info li a:hover {
     grid-template-rows: 1fr;
   }
   .services-list .card {
-    width: 100%;
+    width: 300px;
   }
 }
 /*.services-about {
