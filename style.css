@@ -602,6 +602,9 @@ footer .contact .info li a:hover {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
+  .services-list .card {
+    width: 100%;
+  }
 }
 /*.services-about {
   position: relative;
