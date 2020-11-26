@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px; } }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px; } }*/
+      .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+      .grid-main {
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          gap: 0px;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+      }
+      .main-box {
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        background-color: darkcyan;
+      }
+      .box-1 {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          background-color: #fff;
+      }
+      .box-1 img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+      .box-2 {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          background-color: #fff;
+      }
+      .box-2 .contentBx {
+          padding: 40px;
+      }
+      @media screen and (max-width: 991px){
+        .main-box{height: auto;}
+          .main-box .grid-main {
+              grid-template-columns: 1fr;
+              grid-template-rows: 1fr;
+          }
+          .box-1, .box-2 {
+              height: 300px;
+          }
+          .box-2 {
+              box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+          }
+      }
+      @media screen and (max-width:768px){
+          .main-box{height: auto;}
+          .main-box .grid-main {
+              grid-template-columns: 1fr;
+              grid-template-rows: 1fr;
+          }
+          .box-1, .box-2 {
+              height: 300px;
+          }
+          .box-2 {
+              box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+          }
+          .box-2 p { font-size: 14px; }
+      }
+      @media screen and (max-width:505px){
+        .main-box{height: auto;}
+          .main-box .grid-main {
+              grid-template-columns: 1fr;
+              grid-template-rows: 1fr;
+          }
+          .box-1, .box-2 {
+              min-height: 250px;
+              height: auto;
+          }
+          .box-2 {
+              box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+          }
+          .box-2 p { font-size: 13px; }
+      }
+    </style>
+</head>
+<body>
+    <section class="main-box">
+        <div class="container grid-main">
+            <div class="box-1">
+                <img src="./img/ab.jpg" alt="box1" />
+            </div>
+            <div class="box-2">
+                <div class="contentBx">
+                    <h2>Heading</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In quas magni, sed asperiores nobis tempore?
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur veritatis obcaecati, quidem ab inventore unde.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla repellendus sequi explicabo dicta, libero aliquid velit itaque temporibus atque adipisci saepe obcaecati labore. Voluptatem, quaerat dolor voluptate temporibus itaque quod.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-test">
+        <h2>Test Content</h2>
+    </section>
+</body>
+</html>
