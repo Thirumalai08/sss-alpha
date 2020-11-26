@@ -588,15 +588,22 @@ footer .contact .info li a:hover {
 @media screen and (max-width:991px) {
   .services-list .grid {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
 @media screen and (max-width:768px) {
   .services-list .grid {
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
 }
-
-.services-about {
+@media screen and (max-width:505px) {
+  .services-list .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+/*.services-about {
   position: relative;
   width: 100%;
   height: 60vh;
@@ -614,4 +621,4 @@ footer .contact .info li a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}/**/
+}*/
