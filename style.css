@@ -560,6 +560,20 @@ footer .contact .info li a:hover {
   opacity: 0.15;
   object-fit: cover;
 }
+.breadcrumbs .breadcrumbs-btn {
+  color: #fff;
+  cursor: pointer;
+}
+.breadcrumbs .breadcrumbs-btn:hover {
+  color: #999;
+}
+.breadcrumbs .breadcrumbs-btn span i {
+  font-size: 10px;
+}
+.breadcrumbs h4 {
+  color: #fff;
+  font-size: 2rem;
+}
 .grid-3 {
   grid-template-columns: repeat(3,1fr);
 }
