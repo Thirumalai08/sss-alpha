@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Openings</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--Fonts-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--Owl Carousel CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <div class="navbar__container">
+          <a href="#" id="navbar__logo"><!--<img src="./images/log.jpg" />-->Logo</a>
+          <!--toggle-->
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <!--Main Menu-->
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="index.html" class="navbar__links active">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__links">About Us</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__links">Service Areas</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__links">Job Openings</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__links">Refferals</a>
+              </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__links">Contact Us</a>
+            </li>
+          </ul>
+          <!--Social Menu-->
+          <!---->
+        </div>
+     </nav>
+     <!--End of Navbar-->
+     <!--Under Contruction-->
+     <section class="maintainence">
+         <div class="maintainence-hero">
+            <h1>Under Construction</h1>
+            <hr>
+            <p id="launch"></p>
+         </div>
+     </section>
+     <!--End-->
+      <!--Footer-->
+    <footer>
+        <div class="container flex">
+          <div class="sec aboutus">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vero voluptatum necessitatibus autem a officia!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+            </p>
+            <ul class="sci">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+            </ul>
+          </div>
+          <div class="sec quickLinks">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Service Areas</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Job Openings</a></li>
+              <li><a href="#">Refferals</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="sec contact">
+            <h2>Contact Info</h2>
+            <ul class="info">
+              <li>
+                <span><i class="fa fa-map-marker"></i></span>
+                <span>Address Details Wil be displayed here</span>
+              </li>
+              <li>
+                <span><i class="fa fa-phone"></i></span>
+                <p><a href="tel:132456789">+1 - 1234657890</a></p>
+              </li>
+              <li>
+                <span><i class="fa fa-envelope"></i></span>
+                <p><a href="mailto:yourmail@domin.com">yourmail@domain.com</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!--End-->
+      <!--Copyrights-->
+      <div class="copyrightText">
+        <p>Copyright &copy; 2020 <span class="name">Company Name</span>. All Right Reserved</p>
+      </div>
+<!--Jquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--Owl Carousel JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="app.js"></script>
+<script>
+    let countDownDate = new Date("Jan 1,2021 00:00:00").getTime()
+    let x = setInterval(()=>{
+        let now = new Date().getTime()
+        let distance = countDownDate - now
+
+        let days = Math.floor(distance/(1000*60*60*24))
+        let hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60))
+        let minutes = Math.floor((distance % (1000*60*60)) / (1000*60))
+        let seconds = Math.floor((distance % (1000*60)) / 1000)
+
+        document.getElementById('launch').innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s "
+        if(distance < 0) {
+            clearInterval(x)
+            document.getElementById('launch').innerHTML = "Expired"
+        }
+    },1000)
+</script>
+</body>
+</html>
