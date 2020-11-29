@@ -820,7 +820,7 @@ background-color: #fff;
       .about-box-2 p { font-size: 13px; }
     }
 .about-consultation {
-  background: linear-gradient(to right,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('./img/ab.jpg');
+  background: linear-gradient(to right,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('./img/about/about-2.jpg');
   height: 40vh;
   background-position: center;
   background-size: cover;
