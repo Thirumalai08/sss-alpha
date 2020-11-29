@@ -541,39 +541,6 @@ footer .contact .info li a:hover {
 /************************** Home Page Ends ************************************/
 
 /************************* Services Page Starts *******************************/
-.breadcrumbs {
-  /** if image is used use position relative **/
-  position: relative;
-  background-color: #242C44;
-  width: 100%;
-  height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.breadcrumbs img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.15;
-  object-fit: cover;
-}
-.breadcrumbs .breadcrumbs-btn {
-  color: #fff;
-  cursor: pointer;
-}
-.breadcrumbs .breadcrumbs-btn:hover {
-  color: #999;
-}
-.breadcrumbs .breadcrumbs-btn span i {
-  font-size: 10px;
-}
-.breadcrumbs h4 {
-  color: #fff;
-  font-size: 2rem;
-}
 .grid-3 {
   grid-template-columns: repeat(3,1fr);
 }
@@ -749,3 +716,114 @@ background-color: #fff;
   word-spacing: 20px;
 }
 /************************** End ******************************************/
+/************************ About ******************************************/
+
+.test {
+  background: linear-gradient(to right,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('./img/ab.jpg');
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.test h2 { color: #fff; }
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.about-description {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-color: #fff;
+}
+.about-box-1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.about-box-1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-box-2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.about-box-2 .contentBx {
+  margin: 20px;
+}
+.about-box-2 .contentBx h2 {
+  font-weight: lighter;
+  font-size: 36px;
+}
+.about-box-2 .contentBx h2 span {
+  font-weight: bold;
+}
+.subcontent {
+  margin: 15px;
+}
+.subcontent h3 { font-size: 18px; }
+@media screen and (max-width: 991px){
+  .about-description{height: auto;}
+    .about-description .about-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .about-box-1, .about-box-2 {
+      min-height: 300px;  
+      height: auto;
+    }
+    .about-box-2 {
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+  }
+  @media screen and (max-width:768px){
+    .about-description{height: auto;}
+    .about-description .about-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .about-box-1, .about-box-2 {
+      min-height: 300px;  
+      height: auto;
+    }
+    .about-box-2 {
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+    .about-box-2 .contentBx h2 { font-size: 36px; }
+    .about-box-2 p { font-size: 14px; }
+  }
+  @media screen and (max-width:505px){
+    .about-description{height: auto;}
+      .about-description .about-grid {
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr;
+      }
+      .about-box-1, .about-box-2 {
+          min-height: 250px;
+          height: auto;
+      }
+      .about-box-2 {
+          box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      }
+      .about-box-2 .contentBx h2 { font-size: 24px; }
+      .about-box-2 p { font-size: 13px; }
+    }
+.about-consultation {
+  background: linear-gradient(to right,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('./img/ab.jpg');
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+  padding-top: 100px;
+}
+/*********************** End *********************************************/
