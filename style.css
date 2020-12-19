@@ -180,6 +180,8 @@ img {
       margin: 5px auto;
       transition: all 0.3s ease-in-out;
       background: #242C44;
+      /** Newly Added **/
+      margin-right: 25px;
     }
     .navbar__item { width: 100%; }
     .navbar__links {
