@@ -72,7 +72,7 @@ img {
   }
   /* navbar */
   .navbar {
-    background: #1b1b2f;
+    background: #fff;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
     height: 80px;
     display: flex;
@@ -138,11 +138,11 @@ img {
     justify-content: center;
     align-items: center;
     font-weight: 700;
-    color: #fff;
+    color: #1d71b8;
   }
   .navbar__links:hover {
-      color: #e43f5a;
-    border-bottom: 3px solid #e43f5a;
+    color: #6db52c;
+    border-bottom: 3px solid #6db52c;
     transition: 0.3s all ;
   }
   /* Responsive media queries */
@@ -194,7 +194,7 @@ img {
       height: 3px;
       margin: 5px auto;
       transition: all 0.3s ease-in-out;
-      background: #fff;
+      background: #1d71b8;
       /** Newly Added **/
       margin-right: 25px;
     }
@@ -206,6 +206,7 @@ img {
       display: table;
       color: #fff;
     }
+    .navbar__links:hover { border-bottom: none; }
     #mobile-menu {
       position: absolute;
       top: 20%;
@@ -244,16 +245,16 @@ img {
     display: inline-block;
     padding: 10px 30px;
     cursor: pointer;
-    background: #e43f5a;
-    color: #1b1b2f;
+    background: #6db52c;
+    color: #1d71b8;
     font-weight: 700;
     border-radius: 5px;
     margin-top: 15px;
   }
   .test-btn:hover {
-      color: #fff;
+      color: #1d71b8;
       font-weight: bold;
-      background: transparent;
+      background: #FFF;
       transition: all 0.5s ease-in-out;
       border: 1px solid #fff;
   }
@@ -361,7 +362,7 @@ img {
     text-align: center;
     padding-top: 50px;
     margin-bottom: 50px;
-    color: #e43f5a;
+    color: #6db52c;
   }
   .services .heading span {
     color: #fff;
@@ -370,7 +371,7 @@ img {
   .services h3 {
     padding-top: 15px;
     text-align: center;
-    color:#162447;
+    color: #1d71b8;
     font-weight: 800;
   }
   .services p {
@@ -395,7 +396,7 @@ img {
     color: #fff;
   }
   .services .service-text span {
-    color: #e43f5a;
+    color: #6db52c;
     font-weight: 900;
   }
   @media screen and (max-width:599px) {
@@ -467,7 +468,7 @@ img {
       word-spacing: 0.5px; 
     }
     .box-2 .contentBx h2 span {
-        color: #e43f5a;
+        color: #6db52c;
         font-weight: 700;
     }
 .box-2 .contentBx p {
@@ -583,7 +584,7 @@ footer {
     left: 0;
     width: 50px;
     height: 2px;
-    background: #e43f5a;
+    background: #6db52c;
   }
   footer p {
     color: #999;
@@ -648,7 +649,7 @@ footer {
     text-align: center;
   }
   .copyrightText .name {
-      color: #e43f5a;
+      color: #6db52c;
     font-weight: 800;
   }
   @media screen and (max-width:991px){
