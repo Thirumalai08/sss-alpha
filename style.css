@@ -338,7 +338,7 @@ img {
 }
 .services p {
   padding-top: 10px;
-  text-align: center;
+  text-align: justify;
 }
 .services .card-space {
     padding: 20px;
