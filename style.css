@@ -710,7 +710,19 @@ background-color: #fff;
   }
   .box-2 p { font-size: 13px; }
 }
-
+/** See More Options **/
+/*.services-list .services-list-content*/ 
+.read-more-text {
+  display: none;
+}
+.read-more-text--show {
+  display: inline;
+}
+.read-more-btn {
+  color: crimson;
+  cursor: pointer;
+  font-weight: 700;
+}
 /************************** Job Openings *************************************/
 .maintainence {
   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./img/Services/services-6.jpg');
