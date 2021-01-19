@@ -6,12 +6,98 @@
     <title>About</title>
      <!--CSS-->
      <link rel="stylesheet" href="style.css" />
+     <link rel="stylesheet/scss" href="test.scss" />
+     <link rel="stylesheet" href="test.css" />
      <!--Fonts-->
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" />
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
      <!--Owl Carousel CSS-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+     <style>
+          /**/
+        .our-process {
+            min-height: 80vh;
+            background: #F3F4F6;
+        }
+        .our-process .heading {
+            font-size: 40px;
+            text-align: center;
+            padding-top: 50px;
+            margin-bottom: 50px;
+        }
+        .our-process .heading span {
+            color: #242C44;
+        }
+        .our-process .sub-text {
+            text-align: center;
+            max-width: 900px;
+        }
+        .accordian-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+        }
+        .accordian{
+            width: 800px;
+        }
+        .accordian .contentBx {
+            position: relative;
+            margin: 10px 20px;
+        }
+        .accordian .contentBx .label {
+            position: relative;
+            padding: 10px;
+            background: #242C44;
+            color: #fff;
+            cursor: pointer;
+        }
+        .accordian .contentBx .label::before {
+            content:"+";
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+        }
+        .accordian .contentBx.active .label::before {
+            content: '-';
+        }
+        .accordian .contentBx .content {
+            position: relative;
+            
+            background: #fff;
+            height: 0;
+            overflow: hidden;
+            transition: 0.5s;
+            overflow-y: auto;
+        }
+        .accordian .contentBx.active .content {
+            height: 150px;
+            padding: 10px;
+        }
+        .our-goals {
+            min-height: 50vh;
+            background: #FFF;
+        }
+        .our-goals .heading {
+            padding-top: 50px;
+        }
+        .our-goals .features {
+            padding-top: 20px;
+        }
+        .our-goals .heading-3 {
+            font-weight: 800;
+        }
+        .our-tabs {
+            min-height: 80vh;
+            background: #F3F4F6;
+        }
+        .our-tabs .heading {
+            padding-top: 50px;
+        }
+     </style>
 </head>
 <body>
     <!--Navbar Section-->
@@ -65,11 +151,11 @@
             </div>
             <div class="about-box-2">
                 <div class="contentBx">
-                    <h2>Welcome to <span>Swift Strategic Solutions</span></h2>
+                    <h2>Welcome&nbsp;to&nbsp;<span>Swift Strategic Solutions</span></h2>
                     <p>
-                      At SWIFT we know organisational personnel requirement inside out. Here only specialists in their respective field are chosen as partners; an element that clearly distinguishes us from regular recruitment agencies, for we have a relatively thorough and comprehensive understanding of the specialisations, the positions, and the roles we recruit for. 
+                        At SWIFT we know organisational personnel requirement inside out. Here only specialists in their respective field are chosen as partners; an element that clearly distinguishes us from regular recruitment agencies, for we have a relatively thorough and comprehensive understanding of the specialisations, the positions, and the roles we recruit for. Each of our onboarded consultants operates through a specialist delivery team, enabling excellent focus on fulfilment of responsibilities within an exclusive functional area. 
                      </p>
-                    <div class="subcontent grid">
+                    <!--<div class="subcontent grid">
                         <div>
                             <h3>Consultation</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
@@ -78,7 +164,7 @@
                             <h3>Professional Agents</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -95,6 +181,89 @@
             </div>
         </div>
     </section>
+    <!--End-->
+    <!--Accordian-->
+    <section class="our-process">
+        <div class="container">
+            <h2 class="heading"><span>Our</span>&nbsp;Process</h2>
+            <p class="sub-text">
+                It is our exceptional ability to gauge the requirement of personnel to the most miniscule degree and then provision them, that has won us accolades from scores of diverse organisations.
+            </p>
+        </div>
+    <div class="accordian-body">
+        <!--<h2 class="heading"><span>Services</span>&nbsp;Areas</h2>-->
+        <div class="container accordian">
+            <div class="contentBx">
+                <div class="label">Job</div>
+                <div class="content">
+                    <!--<p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quibusdam distinctio cupiditate itaque earum dolorem, explicabo ut nisi non molestias hic dolore, eos vitae ipsum.
+                    </p>-->
+                    <ul>
+                        <li>Identify Staffing Need </li>
+                        <li>Consult Employer / Hiring Manager</li>
+                        <li>Conduct Need Analysis Audit</li>
+                        <li>Understand Proccess and Position</li>
+                    </ul>
+                </div>
+            </div>
+            <!--2-->
+            <div class="contentBx">
+                <div class="label">Analysis</div>
+                <div class="content">
+                    <!--<p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quibusdam distinctio cupiditate itaque earum dolorem, explicabo ut nisi non molestias hic dolore, eos vitae ipsum.
+                    </p>-->
+                    <ul>
+                        <li>Evaluate Financial Parameters</li>
+                        <li>Evaluate Time Parameters </li>
+                        <li>Assess Availability</li>
+                        <li>Shortlist Profiles</li>
+                    </ul>
+                </div>
+            </div>
+            <!--3-->
+            <div class="contentBx">
+                <div class="label">Placement</div>
+                <div class="content">
+                    <!--<p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quibusdam distinctio cupiditate itaque earum dolorem, explicabo ut nisi non molestias hic dolore, eos vitae ipsum.
+                    </p>-->
+                    <ul>
+                        <li> Conduct Prescreening </li>
+                        <li>Schedule Interviews</li>
+                        <li>Confirm Staffing</li>
+                        <li>Conduct Review</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--End-->
+    <!--Goals-->
+    <section class="our-goals">
+        <div class="container">
+            <h1 class="heading">Our Goals</h1>
+        </div>
+        <div class="container features">
+            <div class="content-features">
+                <h3 class="heading-3">Vision</h3>
+                <p>
+                    To be recognised and valued as the market’s principal recruitment leader in the Corporate Sector across multiple industries.
+                </p>
+            </div>
+            <div class="content-features" style="margin-top: 30px;">
+                <h3 class="heading-3">Mission</h3>
+                <p>
+                    To create the best fit for both employers and candidates, as a partner with diligent understanding of an organisation’s cultural and technical requirements, interleaved with essential core values and professional integrity.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--End-->
+    <!--Test-->
+    
     <!--End-->
      <!--Footer-->
      <footer>
@@ -151,5 +320,58 @@
 <!--Owl Carousel JS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="app.js"></script>
+<script>
+     // accordian
+     const accordian = document.getElementsByClassName('contentBx')
+    for(let i=0;i<accordian.length;i++) {
+        accordian[i].addEventListener('click',function(){
+            this.classList.toggle('active')
+        })
+    }
+</script>
+<script>
+    const labels = document.querySelectorAll(".accordion-item__label");
+const tabs = document.querySelectorAll(".accordion-tab");
+
+function toggleShow() {
+	const target = this;
+	const item = target.classList.contains("accordion-tab")
+		? target
+		: target.parentElement;
+	const group = item.dataset.actabGroup;
+	const id = item.dataset.actabId;
+
+	tabs.forEach(function(tab) {
+		if (tab.dataset.actabGroup === group) {
+			if (tab.dataset.actabId === id) {
+				tab.classList.add("accordion-active");
+			} else {
+				tab.classList.remove("accordion-active");
+			}
+		}
+	});
+
+	labels.forEach(function(label) {
+		const tabItem = label.parentElement;
+
+		if (tabItem.dataset.actabGroup === group) {
+			if (tabItem.dataset.actabId === id) {
+				tabItem.classList.add("accordion-active");
+			} else {
+				tabItem.classList.remove("accordion-active");
+			}
+		}
+	});
+}
+
+labels.forEach(function(label) {
+	label.addEventListener("click", toggleShow);
+});
+
+tabs.forEach(function(tab) {
+	tab.addEventListener("click", toggleShow);
+});
+
+</script>
 </body>
 </html>
