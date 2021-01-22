@@ -897,13 +897,21 @@ background-color: #fff;
 }
 .contact-box {
   width: 100%;
-  height: 80vh;
+  /*height: 80vh;*/
+  margin-bottom: 100px;
 }
 .contact-box .contact-innerbox {
-  width: 100%;
-  height: 70vh;
-  background: #f9f9f9;
-  margin-top: 100px;
+    width: 100%;
+    background: #f9f9f9;
+    margin-top: 100px;
+    min-height: 70vh;
+}
+@media screen and (max-width:991px) {
+  .contact-box .contact-innerbox {
+    width: 100%;
+    min-height: 80vh;
+    height: auto;
+  }
 }
 .contact-box .contact-innerbox .info { 
   width: 100%;
