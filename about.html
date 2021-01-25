@@ -6,8 +6,7 @@
     <title>About</title>
      <!--CSS-->
      <link rel="stylesheet" href="style.css" />
-     <link rel="stylesheet/scss" href="test.scss" />
-     <link rel="stylesheet" href="test.css" />
+     <link rel="stylesheet" type="text/css" href="about-scss/about.css" />
      <!--Fonts-->
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" />
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -17,7 +16,7 @@
      <style>
           /**/
         .our-process {
-            min-height: 80vh;
+            min-height: 100vh;
             background: #F3F4F6;
         }
         .our-process .heading {
@@ -31,51 +30,6 @@
         }
         .our-process .sub-text {
             text-align: center;
-            max-width: 900px;
-        }
-        .accordian-body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 60px;
-        }
-        .accordian{
-            width: 800px;
-        }
-        .accordian .contentBx {
-            position: relative;
-            margin: 10px 20px;
-        }
-        .accordian .contentBx .label {
-            position: relative;
-            padding: 10px;
-            background: #242C44;
-            color: #fff;
-            cursor: pointer;
-        }
-        .accordian .contentBx .label::before {
-            content:"+";
-            position: absolute;
-            top: 50%;
-            right: 20px;
-            transform: translateY(-50%);
-            font-size: 1.5rem;
-        }
-        .accordian .contentBx.active .label::before {
-            content: '-';
-        }
-        .accordian .contentBx .content {
-            position: relative;
-            
-            background: #fff;
-            height: 0;
-            overflow: hidden;
-            transition: 0.5s;
-            overflow-y: auto;
-        }
-        .accordian .contentBx.active .content {
-            height: 150px;
-            padding: 10px;
         }
         .our-goals {
             min-height: 50vh;
@@ -190,55 +144,52 @@
                 It is our exceptional ability to gauge the requirement of personnel to the most miniscule degree and then provision them, that has won us accolades from scores of diverse organisations.
             </p>
         </div>
-    <div class="accordian-body">
-        <!--<h2 class="heading"><span>Services</span>&nbsp;Areas</h2>-->
-        <div class="container accordian">
-            <div class="contentBx">
-                <div class="label">Job</div>
-                <div class="content">
-                    <!--<p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quibusdam distinctio cupiditate itaque earum dolorem, explicabo ut nisi non molestias hic dolore, eos vitae ipsum.
-                    </p>-->
-                    <ul>
-                        <li>Identify Staffing Need </li>
-                        <li>Consult Employer / Hiring Manager</li>
-                        <li>Conduct Need Analysis Audit</li>
-                        <li>Understand Proccess and Position</li>
-                    </ul>
-                </div>
-            </div>
-            <!--2-->
-            <div class="contentBx">
-                <div class="label">Analysis</div>
-                <div class="content">
-                    <!--<p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quibusdam distinctio cupiditate itaque earum dolorem, explicabo ut nisi non molestias hic dolore, eos vitae ipsum.
-                    </p>-->
-                    <ul>
-                        <li>Evaluate Financial Parameters</li>
-                        <li>Evaluate Time Parameters </li>
-                        <li>Assess Availability</li>
-                        <li>Shortlist Profiles</li>
-                    </ul>
-                </div>
-            </div>
-            <!--3-->
-            <div class="contentBx">
-                <div class="label">Placement</div>
-                <div class="content">
-                    <!--<p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quibusdam distinctio cupiditate itaque earum dolorem, explicabo ut nisi non molestias hic dolore, eos vitae ipsum.
-                    </p>-->
-                    <ul>
-                        <li> Conduct Prescreening </li>
-                        <li>Schedule Interviews</li>
-                        <li>Confirm Staffing</li>
-                        <li>Conduct Review</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="container">
+            <section class="accordian-body">
+                <section class="accordion">
+                    <section class="accordion-tabs">
+                      <button class="accordion-tab accordion-active" data-actab-group="0" data-actab-id="0">Job</button>
+                      <button class="accordion-tab" data-actab-group="0" data-actab-id="1">Analysis</button>
+                      <button class="accordion-tab" data-actab-group="0" data-actab-id="2">Placement</button>
+                    </section>
+                    <section class="accordion-content">
+                      <article class="accordion-item accordion-active" data-actab-group="0" data-actab-id="0">
+                        <h4 class="accordion-item__label">Job</h4>
+                        <ol class="accordion-item__container">
+                            <li>1. Identify Staffing Need</li>
+                            <li>2. Consult Employer / Hiring Manager</li>
+                            <li>3. Conduct Need Analysis Audit</li>
+                            <li>4. Understand Proccess and Position</li>
+                        </ol>
+                      </article>
+                      <article class="accordion-item" data-actab-group="0" data-actab-id="1">
+                        <h4 class="accordion-item__label">Analysis</h4>
+                        <ol class="accordion-item__container">
+                            <li>1. Evaluate Financial Parameters</li>
+                            <li>2. Evaluate Time Parameters</li>
+                            <li>3. Assess Availability</li>
+                            <li>4. Shortlist Profiles</li>
+                        </ol>
+                      </article>
+                      <article class="accordion-item" data-actab-group="0" data-actab-id="2">
+                        <h4 class="accordion-item__label">Placement</h4>
+                        <ol class="accordion-item__container">
+                            <li>1. Conduct Prescreening</li>
+                            <li>2. Schedule Interviews</li>
+                            <li>3. Confirm Staffing</li>
+                            <li>4. Conduct Review</li>
+                        </ol>
+                      </article>
+                      <!--<article class="accordion-item" data-actab-group="0" data-actab-id="2">
+                        <h4 class="accordion-item__label">Placement</h4>
+                        <div class="accordion-item__container">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, deserunt minima? Ut facere minus, ipsa dolore animi quis alias eos, porro corporis quod esse quidem. Maxime a aperiam perspiciatis architecto?</p>
+                        </div>
+                      </article>-->
+                    </section>
+                  </section>
+            </section>
         </div>
-    </div>
     </section>
     <!--End-->
     <!--Goals-->
@@ -320,58 +271,6 @@
 <!--Owl Carousel JS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="app.js"></script>
-<script>
-     // accordian
-     const accordian = document.getElementsByClassName('contentBx')
-    for(let i=0;i<accordian.length;i++) {
-        accordian[i].addEventListener('click',function(){
-            this.classList.toggle('active')
-        })
-    }
-</script>
-<script>
-    const labels = document.querySelectorAll(".accordion-item__label");
-const tabs = document.querySelectorAll(".accordion-tab");
-
-function toggleShow() {
-	const target = this;
-	const item = target.classList.contains("accordion-tab")
-		? target
-		: target.parentElement;
-	const group = item.dataset.actabGroup;
-	const id = item.dataset.actabId;
-
-	tabs.forEach(function(tab) {
-		if (tab.dataset.actabGroup === group) {
-			if (tab.dataset.actabId === id) {
-				tab.classList.add("accordion-active");
-			} else {
-				tab.classList.remove("accordion-active");
-			}
-		}
-	});
-
-	labels.forEach(function(label) {
-		const tabItem = label.parentElement;
-
-		if (tabItem.dataset.actabGroup === group) {
-			if (tabItem.dataset.actabId === id) {
-				tabItem.classList.add("accordion-active");
-			} else {
-				tabItem.classList.remove("accordion-active");
-			}
-		}
-	});
-}
-
-labels.forEach(function(label) {
-	label.addEventListener("click", toggleShow);
-});
-
-tabs.forEach(function(tab) {
-	tab.addEventListener("click", toggleShow);
-});
-
-</script>
+<script src="js/app.js"></script>
 </body>
 </html>
