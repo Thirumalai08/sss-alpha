@@ -81,3 +81,16 @@ var carousel = function(){
     })
 }
 carousel()
+
+function prealoader () {
+    if ($('#loader').length) {
+      $('#loader').fadeOut(); // will first fade out the loading animation
+      $('#loader-wrapper').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+      $('body').delay(350).css({'overflow':'visible'});
+   };
+  }
+jQuery(window).on('load',function(){
+    (function($){
+        prealoader()
+    })(jQuery)
+})
