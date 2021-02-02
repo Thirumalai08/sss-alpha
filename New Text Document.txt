@@ -1,6 +1,0 @@
-blue #1d71b8
-green #6db52c
-
-dark blue #1b1b2f
-pink #e43f5a
-light blue #162447 

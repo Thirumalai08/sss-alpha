@@ -739,7 +739,7 @@ background-color: #fff;
 }
 /************************** Job Openings *************************************/
 .maintainence {
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./img/Services/services-6.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/Services/services-6.jpg');/* Service 6*/
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -769,7 +769,7 @@ background-color: #fff;
 /************************ About ******************************************/
 
 .test {
-  background: linear-gradient(to right,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('./img/about/about-4.jpg');
+  background: linear-gradient(to right,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../img/about/about-4.jpg'); /* about-4 */
   height: 40vh;
   background-position: center;
   background-size: cover;
@@ -870,7 +870,7 @@ background-color: #fff;
       .about-box-2 p { font-size: 13px; }
     }
 .about-consultation {
-  background: linear-gradient(to right,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('./img/about/about-2.jpg');
+  background: linear-gradient(to right,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../img/about/about-2.jpg');
   height: 40vh;
   background-position: center;
   background-size: cover;
